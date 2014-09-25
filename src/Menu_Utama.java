@@ -192,9 +192,19 @@ public class Menu_Utama extends javax.swing.JFrame {
 
         buttonGroup1.add(jRadioButton3);
         jRadioButton3.setText("Oktadesimal");
+        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton3ActionPerformed(evt);
+            }
+        });
 
         buttonGroup1.add(jRadioButton4);
         jRadioButton4.setText("Heksadesimal");
+        jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton4ActionPerformed(evt);
+            }
+        });
 
         jButton1.setText("clear");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -425,6 +435,44 @@ public class Menu_Utama extends javax.swing.JFrame {
         tblF.setEnabled(false);
         
     }//GEN-LAST:event_jRadioButton2ActionPerformed
+
+    private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
+        tbl0.setEnabled(true);
+        tbl1.setEnabled(true);
+        tbl2.setEnabled(true);
+        tbl3.setEnabled(true);
+        tbl4.setEnabled(true);
+        tbl5.setEnabled(true);
+        tbl6.setEnabled(true);
+        tbl7.setEnabled(true);
+        tbl8.setEnabled(false);
+        tbl9.setEnabled(false);
+        tblA.setEnabled(false);
+        tblB.setEnabled(false);
+        tblC.setEnabled(false);
+        tblD.setEnabled(false);
+        tblE.setEnabled(false);
+        tblF.setEnabled(false);
+    }//GEN-LAST:event_jRadioButton3ActionPerformed
+
+    private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
+        tbl0.setEnabled(true);
+        tbl1.setEnabled(true);
+        tbl2.setEnabled(true);
+        tbl3.setEnabled(true);
+        tbl4.setEnabled(true);
+        tbl5.setEnabled(true);
+        tbl6.setEnabled(true);
+        tbl7.setEnabled(true);
+        tbl8.setEnabled(true);
+        tbl9.setEnabled(true);
+        tblA.setEnabled(true);
+        tblB.setEnabled(true);
+        tblC.setEnabled(true);
+        tblD.setEnabled(true);
+        tblE.setEnabled(true);
+        tblF.setEnabled(true);
+    }//GEN-LAST:event_jRadioButton4ActionPerformed
 
     /**
      * @param args the command line arguments
