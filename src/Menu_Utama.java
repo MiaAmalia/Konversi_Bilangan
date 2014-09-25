@@ -414,6 +414,8 @@ public class Menu_Utama extends javax.swing.JFrame {
         tblD.setEnabled(false);
         tblE.setEnabled(false);
         tblF.setEnabled(false);
+        KonversiBiner kb = new KonversiBiner();
+        jTextField1.setText(kb.kobin(jTextField1.getText()));
     }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
