@@ -8,5 +8,7 @@
  * @author Administrator
  */
 public class KonversikeDesimal {
-    
+    public String koDes(int bilangan){
+        return Integer.toString(bilangan);
+    }
 }

@@ -445,8 +445,8 @@ public class Menu_Utama extends javax.swing.JFrame {
         tblD.setEnabled(false);
         tblE.setEnabled(false);
         tblF.setEnabled(false);
-        jTextField1.setText(g.keDesimal(a.pengubah(jb, jTextField1.getText())));
-        jenisbilangan(1);
+        jTextField1.setText(g.koDes(a.pengubah(jb, jTextField1.getText())));
+        jenisbilangan(2);
     }//GEN-LAST:event_jRadioButton2ActionPerformed
 
     private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
