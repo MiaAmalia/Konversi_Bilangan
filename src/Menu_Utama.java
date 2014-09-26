@@ -16,6 +16,7 @@ public class Menu_Utama extends javax.swing.JFrame {
     konversikeokta d = new konversikeokta();
     konversikeheksa e = new konversikeheksa();
     KonversiBiner f = new KonversiBiner();
+    KonversikeDesimal g = new KonversikeDesimal();
     private int jb = 1;
     public Menu_Utama(){
         initComponents();
@@ -444,6 +445,8 @@ public class Menu_Utama extends javax.swing.JFrame {
         tblD.setEnabled(false);
         tblE.setEnabled(false);
         tblF.setEnabled(false);
+        jTextField1.setText(g.keDesimal(a.pengubah(jb, jTextField1.getText())));
+        jenisbilangan(1);
     }//GEN-LAST:event_jRadioButton2ActionPerformed
 
     private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
