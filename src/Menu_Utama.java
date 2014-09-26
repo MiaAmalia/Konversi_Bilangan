@@ -12,10 +12,19 @@ public class Menu_Utama extends javax.swing.JFrame {
     /**
      * Creates new form Menu_Utama
      */
-    public Menu_Utama() {
+    Pengubah a = new Pengubah();
+    konversikeokta d = new konversikeokta();
+    konversikeheksa e = new konversikeheksa();
+    private int jb = 1;
+    public Menu_Utama(){
         initComponents();
+        jRadioButton1.setSelected(true);
     }
-
+    
+    private int jenisbilangan(int jbd){
+        jb = jbd;
+        return jb;
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -349,7 +358,6 @@ public class Menu_Utama extends javax.swing.JFrame {
     }//GEN-LAST:event_tbl4ActionPerformed
 
     private void tbl5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tbl5ActionPerformed
-
        jTextField1.setText(jTextField1.getText()+"5");
     }//GEN-LAST:event_tbl5ActionPerformed
 
@@ -370,7 +378,6 @@ public class Menu_Utama extends javax.swing.JFrame {
     }//GEN-LAST:event_tbl9ActionPerformed
 
     private void tblAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tblAActionPerformed
-
         jTextField1.setText(jTextField1.getText()+"A");
     }//GEN-LAST:event_tblAActionPerformed
 
@@ -383,17 +390,15 @@ public class Menu_Utama extends javax.swing.JFrame {
     }//GEN-LAST:event_tblCActionPerformed
 
     private void tblDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tblDActionPerformed
-
       jTextField1.setText(jTextField1.getText()+"D");
     }//GEN-LAST:event_tblDActionPerformed
 
     private void tblFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tblFActionPerformed
-
        jTextField1.setText(jTextField1.getText()+"F");
     }//GEN-LAST:event_tblFActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        jTextField1.setText("");
+        jTextField1.setText("0");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void tbl0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tbl0ActionPerformed
@@ -436,7 +441,6 @@ public class Menu_Utama extends javax.swing.JFrame {
         tblD.setEnabled(false);
         tblE.setEnabled(false);
         tblF.setEnabled(false);
-        
     }//GEN-LAST:event_jRadioButton2ActionPerformed
 
     private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
@@ -456,6 +460,8 @@ public class Menu_Utama extends javax.swing.JFrame {
         tblD.setEnabled(false);
         tblE.setEnabled(false);
         tblF.setEnabled(false);
+        jTextField1.setText(d.keokta(a.pengubah(jb, jTextField1.getText())));
+        jenisbilangan(3);
     }//GEN-LAST:event_jRadioButton3ActionPerformed
 
     private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
@@ -475,6 +481,8 @@ public class Menu_Utama extends javax.swing.JFrame {
         tblD.setEnabled(true);
         tblE.setEnabled(true);
         tblF.setEnabled(true);
+        jTextField1.setText(e.keheksa(a.pengubah(jb, jTextField1.getText())));
+        jenisbilangan(4);
     }//GEN-LAST:event_jRadioButton4ActionPerformed
 
     /**
