@@ -9,7 +9,7 @@
  * @author Administrator
  */
 public class KonversiBiner {
-   public String kobin(String angka){
-       return Integer.toBinaryString(Integer.parseInt(angka));
+   public String kobin(int bilangan){
+       return Integer.toBinaryString(bilangan);
    }
 }

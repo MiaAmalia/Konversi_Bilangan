@@ -15,6 +15,7 @@ public class Menu_Utama extends javax.swing.JFrame {
     Pengubah a = new Pengubah();
     konversikeokta d = new konversikeokta();
     konversikeheksa e = new konversikeheksa();
+    KonversiBiner f = new KonversiBiner();
     private int jb = 1;
     public Menu_Utama(){
         initComponents();
@@ -422,8 +423,8 @@ public class Menu_Utama extends javax.swing.JFrame {
         tblD.setEnabled(false);
         tblE.setEnabled(false);
         tblF.setEnabled(false);
-        KonversiBiner kb = new KonversiBiner();
-        jTextField1.setText(kb.kobin(jTextField1.getText()));
+        jTextField1.setText(f.kobin(a.pengubah(jb, jTextField1.getText())));
+        jenisbilangan(1);
     }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
